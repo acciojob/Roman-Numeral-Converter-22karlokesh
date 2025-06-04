@@ -30,10 +30,8 @@ console.log(convertToRoman(36));
 
 */
 
-
+// not understandable
 function convertToRoman(num) {
-  if (num <= 0 || num > 3999) return ""; // Basic check for limits of traditional Roman numerals
-
   const romanMap = [
     ["M", 1000],
     ["CM", 900],
@@ -50,6 +48,8 @@ function convertToRoman(num) {
     ["I", 1],
   ];
 
+  if (num <= 0 || num > 100000) return ""; // Per problem constraints
+
   let result = '';
 
   for (let [symbol, value] of romanMap) {
@@ -62,8 +62,10 @@ function convertToRoman(num) {
   return result;
 }
 
-// You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
-console.log(convertToRoman(36));
+console.log(convertToRoman(99999)); // should return a very long Roman numeral
+
+// Do not edit below this line
+module.exports = convertToRoman;
 
 
 
