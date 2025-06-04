@@ -64,10 +64,6 @@ function convertToRoman(num) {
 
 console.log(convertToRoman(99999)); // should return a very long Roman numeral
 
-// Do not edit below this line
-module.exports = convertToRoman;
-
-
 
 // do not edit below this line
 module.exports = convertToRoman
